@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Welcome</title>
+    <style>
+        /* Basic styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(120deg, #2980b9, #6dd5fa);
+            color: #fff;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            animation: slide-down 1s ease-out;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #6dd5fa;
+        }
+
+        /* Welcome Section */
+        .welcome {
+            margin-top: 50px;
+            animation: fade-in 2s ease-in-out;
+        }
+
+        .welcome h2 {
+            font-size: 3em;
+            animation: bounce-in 1.5s ease-out;
+        }
+
+        .welcome p {
+            font-size: 1.2em;
+            margin-top: 20px;
+            animation: fade-in 3s ease-in-out;
+        }
+
+        /* Animations */
+        @keyframes slide-down {
+            0% {
+                transform: translateY(-50%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fade-in {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes bounce-in {
+            0% {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+            70% {
+                transform: scale(1.2);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        /* Make it responsive */
+        @media (max-width: 768px) {
+            .welcome h2 {
+                font-size: 2em;
+            }
+
+            .welcome p {
+                font-size: 1em;
+            }
+
+            nav a {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to My Portfolio</h1>
+    <nav>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<div class="welcome">
+    <h2>Hello, I'm Izuchukwu Nwabuzor</h2>
+    <p>Welcome to my personal portfolio website. Use the navigation above to explore!</p>
+</div>
+
+</body>
+</html>
